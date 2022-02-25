@@ -1,0 +1,13 @@
+{
+	"name": "AzureDataLakeStorage1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Test",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://tutorialdatalake.dfs.core.windows.net",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEVFODJEMTUzLUEzNDEtNEYzOS05MzFGLUFDQjZFMkFEQjdCRV8yZDU1NTIwMC1mZjJkLTQ4NDAtOWZiZC1lZjZmOTFmOGZkMDgiDQp9"
+		}
+	}
+}
