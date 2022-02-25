@@ -1,0 +1,9 @@
+{
+	"name": "TutorialDataFactoryDatabricksPythonActivity",
+	"location": "germanywestcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b4eeebb0-ea52-4771-b895-2a89e766cad1",
+		"tenantId": "862d5f9b-6664-42ef-86fc-78136dc94f59"
+	}
+}
