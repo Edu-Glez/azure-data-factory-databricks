@@ -11,6 +11,7 @@
 			"location": {
 				"type": "AzureBlobStorageLocation",
 				"fileName": "business-financial-data-sep-2021-quarter.csv",
+				"folderPath": "dataset",
 				"container": "tutorial"
 			},
 			"columnDelimiter": ",",
