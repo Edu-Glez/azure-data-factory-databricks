@@ -63,14 +63,7 @@
 			{
 				"name": "Python1",
 				"type": "DatabricksSparkPython",
-				"dependsOn": [
-					{
-						"activity": "Copy_gow",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -80,18 +73,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"pythonFile": "dbfs:/FileStore/tables/tutorial.py",
-					"parameters": [],
-					"libraries": [
-						{
-							"pypi": {
-								"package": ""
-							}
-						}
-					]
+					"pythonFile": "dbfs:/FileStore/tables/tutorial.py"
 				},
 				"linkedServiceName": {
-					"referenceName": "Tutorial",
+					"referenceName": "TutorialFarAway",
 					"type": "LinkedServiceReference"
 				}
 			}
