@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy_gow",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -59,6 +59,40 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Python1",
+				"type": "DatabricksSparkPython",
+				"dependsOn": [
+					{
+						"activity": "Copy_gow",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pythonFile": "dbfs:/FileStore/tables/tutorial.py",
+					"libraries": [
+						{
+							"pypi": {
+								"package": ""
+							}
+						}
+					]
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks1",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
