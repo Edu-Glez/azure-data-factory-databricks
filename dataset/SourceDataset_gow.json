@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText2",
+	"name": "SourceDataset_gow",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage2",
