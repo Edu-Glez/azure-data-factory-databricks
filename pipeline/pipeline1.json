@@ -91,7 +91,7 @@
 					]
 				},
 				"linkedServiceName": {
-					"referenceName": "AzureDatabricks1",
+					"referenceName": "Tutorial",
 					"type": "LinkedServiceReference"
 				}
 			}
