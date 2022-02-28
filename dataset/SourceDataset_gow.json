@@ -2,7 +2,7 @@
 	"name": "SourceDataset_gow",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStorage2",
+			"referenceName": "AzurBlobStorageforblog",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,14 +10,72 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "tutorial.txt",
+				"fileName": "people.json",
 				"folderPath": "tutorial",
-				"container": "tutorialsink"
+				"container": "source"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "Series_reference",
+				"type": "String"
+			},
+			{
+				"name": "Period",
+				"type": "String"
+			},
+			{
+				"name": "Data_value",
+				"type": "String"
+			},
+			{
+				"name": "Suppressed",
+				"type": "String"
+			},
+			{
+				"name": "STATUS",
+				"type": "String"
+			},
+			{
+				"name": "UNITS",
+				"type": "String"
+			},
+			{
+				"name": "Magnitude",
+				"type": "String"
+			},
+			{
+				"name": "Subject",
+				"type": "String"
+			},
+			{
+				"name": "Group",
+				"type": "String"
+			},
+			{
+				"name": "Series_title_1",
+				"type": "String"
+			},
+			{
+				"name": "Series_title_2",
+				"type": "String"
+			},
+			{
+				"name": "Series_title_3",
+				"type": "String"
+			},
+			{
+				"name": "Series_title_4",
+				"type": "String"
+			},
+			{
+				"name": "Series_title_5",
+				"type": "String"
+			}
+		]
 	}
 }
